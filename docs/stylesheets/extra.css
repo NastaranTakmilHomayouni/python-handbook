@@ -1,0 +1,132 @@
+/* ==================================
+   Python Developer Handbook
+   Custom documentation styling
+   ================================== */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --text: #1e293b;
+    --muted: #64748b;
+    --background: #ffffff;
+    --code-background: #f1f5f9;
+    --border: #e2e8f0;
+}
+
+/* Typography */
+
+body {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h1 {
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-top: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+/* Links */
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Code */
+
+code {
+    background: var(--code-background);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+pre {
+    background: var(--code-background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #eff6ff;
+    color: #1e40af;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Teaching notes */
+
+.admonition {
+    border-left: 4px solid var(--primary);
+    background: #eff6ff;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+/* Copy button */
+
+.code-wrapper {
+    position: relative;
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background: white;
+    color: #334155;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-code-button:hover {
+    background: #e2e8f0;
+}
+
+.copy-code-button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}

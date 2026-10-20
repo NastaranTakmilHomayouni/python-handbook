@@ -1,0 +1,38 @@
+site_name: Python Developer Handbook
+site_description: Practical, tested Python environment lessons for Linux, Windows, and macOS
+site_url: https://example.com/  # Replace or remove before publishing
+
+theme:
+  name: readthedocs
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+nav:
+  - Home: index.md
+  - Python Environments:
+      - Start Here: python-environments/index.md
+      - Python Installations and PATH: python-environments/interpreters-and-path.md
+      - venv on Linux, Windows and macOS: python-environments/venv.md
+      - pip and Dependencies: python-environments/pip-and-requirements.md
+      - Python Versions with pyenv: python-environments/pyenv.md
+      - Conda: python-environments/conda.md
+      - uv: python-environments/uv.md
+      - Poetry and Other Tools: python-environments/other-tools.md
+      - Environment Variables: python-environments/environment-variables.md
+      - Docker and Execution Environments: python-environments/docker.md
+      - IDEs and Jupyter: python-environments/editors-and-jupyter.md
+      - Troubleshooting: python-environments/troubleshooting.md
+  - Exercises:
+      - Practice Lab: exercises/environment-lab.md
+      - Solutions: exercises/solutions.md
