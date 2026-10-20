@@ -1,6 +1,6 @@
 site_name: Python Developer Handbook
 site_description: Practical, tested Python environment lessons for Linux, Windows, and macOS
-site_url: https://example.com/  # Replace or remove before publishing
+site_url: https://NastaranTakmilHomayouni.github.io/python-handbook/
 
 theme:
   name: readthedocs
